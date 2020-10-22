@@ -1,15 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3.0 + Vite" />
+  <div id="app">
+    <h1>Hello, Vite</h1>
+    <van-button>123</van-button>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import VanButton from './components/button/index.jsx'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    VanButton
   }
 }
 </script>
+
+<style lang="scss" scoped>
+#app {
+  color: red;
+}
+</style>
